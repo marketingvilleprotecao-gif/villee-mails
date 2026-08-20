@@ -1,0 +1,179 @@
+<!--
+  E-MAIL: Reconhecimento — 15 anos de Ville (versão clean)
+  Base: Comunicação Interna (colaborador aniversariante de casa)
+  Assunto sugerido: *|PRIMEIRO_NOME|*, parabéns por fazer parte da nossa história!
+  Preview text: Hoje celebramos um marco muito especial da sua trajetória na Ville.
+
+  ============================================================
+  CAMPO A PREENCHER POR ENVIO
+  ============================================================
+  *|PRIMEIRO_NOME|*  -> variável nativa do RD Station (não mexer, já vem pronta)
+
+  Este é o template fixo de 15 anos — o número e a mensagem final já vêm prontos,
+  só precisa preencher o primeiro nome (automático via RD Station).
+
+  ============================================================
+  PRÊMIO (referência interna — não aparece no e-mail)
+  ============================================================
+  R$ 250,00 (valor total, incluindo acompanhante) disponibilizado como saldo no cartão
+  Caju (VR) do colaborador, pra usar em restaurante de sua escolha. Sem pagamento
+  adiantado, sem nota fiscal, sem reembolso — o saldo já nasce disponível no cartão.
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ville | Parabéns por fazer parte da nossa história</title>
+<!--[if mso]>
+<noscript>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<![endif]-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+  body, table, td { font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif; }
+  body { margin:0; padding:0; background-color:#f4f5f7; -webkit-text-size-adjust:100%; }
+  img { border:0; display:block; }
+  a { text-decoration:none; }
+  .wrapper { width:100%; background-color:#f4f5f7; padding:40px 0; }
+  .container { width:700px; max-width:700px; margin:0 auto; background-color:#ffffff; }
+  .px { padding-left:56px; padding-right:56px; }
+  .navy { color:#021D5B; }
+  .gold { color:#C49D35; }
+  h1,h2,h3,p { margin:0; }
+  @media only screen and (max-width:700px) {
+    .container { width:100% !important; }
+    .px { padding-left:28px !important; padding-right:28px !important; }
+  }
+</style>
+</head>
+<body>
+<div style="display:none; max-height:0; overflow:hidden; opacity:0;">
+  Hoje celebramos um marco muito especial da sua trajetória na Ville.
+</div>
+
+<table role="presentation" class="wrapper" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+
+  <table role="presentation" class="container" width="700" cellpadding="0" cellspacing="0">
+
+    <!-- ===================== HEADER ===================== -->
+    <tr>
+      <td style="padding:44px 56px 0 56px; text-align:center;">
+        <img src="data:image/png;base64,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" width="44" height="43" alt="Ville" style="margin:0 auto; display:block;">
+      </td>
+    </tr>
+
+    <!-- ===================== MARCO — tipografia simples ===================== -->
+    <tr>
+      <td class="px" style="padding-top:40px; padding-bottom:8px; text-align:center;">
+        <p style="font-size:11.5px; letter-spacing:3px; text-transform:uppercase; color:#C49D35; font-weight:600;">
+          Aniversário de empresa
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-bottom:28px; text-align:center;">
+        <span style="font-size:76px; line-height:1; font-weight:700; color:#021D5B;">15</span>
+        <span style="display:block; font-size:13px; letter-spacing:3px; color:#8a8f9c; font-weight:600; margin-top:6px;">ANOS DE VILLE</span>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr><td style="border-top:1px solid #ece7da;"></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ===================== MENSAGEM PRINCIPAL ===================== -->
+    <tr>
+      <td class="px" style="padding-top:40px;">
+        <h1 style="font-size:24px; line-height:1.4; color:#021D5B; font-weight:700;">
+          Parabéns por fazer parte da nossa história, *|PRIMEIRO_NOME|*.
+        </h1>
+      </td>
+    </tr>
+    <tr>
+      <td class="px" style="padding-top:20px; padding-bottom:6px;">
+        <p style="font-size:15px; line-height:1.85; color:#5a5f6d;">
+          Ao completar <strong class="navy">15 anos de Ville</strong>, queremos parar um instante
+          pra dizer: <strong class="gold">obrigado</strong>. Sua dedicação, seu comprometimento e a
+          forma como você contribui, todos os dias, pro crescimento da nossa empresa fazem toda a
+          diferença.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="px" style="padding-bottom:44px;">
+        <p style="font-size:15px; line-height:1.85; color:#5a5f6d;">
+          Acreditamos que são as <strong class="gold">pessoas que constroem uma história</strong> — e
+          cada ano ao seu lado representa confiança, parceria e evolução. É uma honra ter você com a
+          gente nessa trajetória.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ===================== OFERTA — texto direto, sem card/ícones ===================== -->
+    <tr>
+      <td class="px" style="padding-bottom:8px;">
+        <p style="font-size:11.5px; letter-spacing:1.6px; text-transform:uppercase; color:#C49D35; font-weight:700;">
+          Seu reconhecimento
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="px" style="padding-bottom:40px; border-left:3px solid #C49D35;">
+        <p style="font-size:17px; line-height:1.7; color:#021D5B; font-weight:500; padding-left:24px;">
+          Um saldo de <strong>R$ 250,00</strong> já está disponível no seu cartão <strong>Caju (VR)</strong>,
+          pra você ir a um restaurante de sua escolha com um acompanhante.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ===================== MENSAGEM CARINHOSA — no lugar do "como funciona" ===================== -->
+    <tr>
+      <td class="px" style="padding-bottom:8px;">
+        <table role="presentation" cellpadding="0" cellspacing="0">
+          <tr><td style="width:36px; border-top:2px solid #C49D35;"></td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="px" style="padding-top:18px; padding-bottom:48px;">
+        <p style="font-size:15.5px; line-height:1.9; color:#5a5f6d; font-style:italic;">
+          Quinze anos é praticamente metade da nossa própria história. Poucas pessoas conhecem a Ville como você conhece — e isso faz de você uma referência pra quem está começando agora. Obrigado por ter transformado tanto tempo de trabalho em uma trajetória da qual todos nós temos orgulho.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ===================== FOOTER ===================== -->
+    <tr>
+      <td class="px" style="padding-top:32px; padding-bottom:44px; border-top:1px solid #ece7da; text-align:center;">
+        <p style="font-size:14px; color:#021D5B; font-weight:600; margin-bottom:6px;">
+          Obrigado por construir essa história conosco.
+        </p>
+        <p style="font-size:12.5px; color:#C49D35; font-weight:600; letter-spacing:.3px; margin-bottom:18px;">
+          Equipe Ville Proteção
+        </p>
+        <p style="font-size:11px; color:#9aa0ac;">
+          Ville Equipamentos de Proteção · Bragança Paulista, SP
+        </p>
+      </td>
+    </tr>
+
+  </table>
+
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!--
+  VILLE - E-mail de ALERTA DE SEGURANCA: boletos e e-mails falsos em nome da Ville
+  Familia: Relacionamento Direto + checklist (1 CTA)
+  Base: TODA a base (distribuidores e clientes finais), texto neutro. Comunicado de seguranca, sem oferta.
+  Largura: 600px
+  Assunto (A/B):
+    A: Alerta: boletos falsos em nome da Ville
+    B: Cuidado com e-mails falsos em nome da Ville
+  Preview: Confira o domínio do e-mail e os dados do boleto antes de pagar.
+  Dominio oficial usado no texto: @villeprotecao.com.br (conforme assinaturas da equipe).
+  Dados confirmados pela Paulinha: boletos somente via Itau; CNPJ 22.226.249/0001-52; dominio villeprotecao.com.br.
+  CTA: botao "Qualquer duvida, fale com a Ville" levando ao site (sem link de WhatsApp).
+  Nao cita o remetente nem os dados do e-mail falso recebido (evita divulgar o golpe e dados de cliente).
+  Sem link de descadastro no rodape (padrao pedido pela Paulinha).
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alerta de segurança | Ville</title>
+<style>
+  body { margin:0; padding:0; background-color:#eceef1; }
+  img { border:0; display:block; }
+  .container { width:600px; max-width:600px; }
+  @media screen and (max-width:600px) {
+    .container { width:100% !important; max-width:100% !important; }
+    .fluid-pad { padding-left:24px !important; padding-right:24px !important; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#eceef1;">
+<div style="display:none;max-height:0;opacity:0;overflow:hidden;font-size:1px;line-height:1px;color:#eceef1;">Confira o domínio do e-mail e os dados do boleto antes de pagar.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#eceef1;">
+  <tr>
+    <td align="center" style="padding:24px 12px;">
+      <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" align="center" style="width:600px;max-width:600px;background-color:#ffffff;border-radius:14px;overflow:hidden;">
+
+        <!-- HERO -->
+        <tr>
+          <td class="fluid-pad" style="background-color:#021D5B;padding:36px 44px 40px 44px;font-family:'Space Grotesk',Arial,sans-serif;">
+            <img src="data:image/png;base64,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" width="64" height="62" alt="Ville" style="display:block;margin:0 0 24px 0;" />
+            <span style="display:inline-block;background-color:#FF8F00;color:#ffffff;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:16px;">Alerta de segurança</span>
+            <h1 style="margin:0 0 14px 0;color:#ffffff;font-size:28px;line-height:1.3;font-weight:700;">Boletos e e-mails falsos <span style="color:#FF8F00;">em nome da Ville</span></h1>
+            <p style="margin:0;color:#D1D3D4;font-size:15px;line-height:1.6;">Veja como identificar e proteger a sua empresa.</p>
+          </td>
+        </tr>
+
+        <!-- ABERTURA -->
+        <tr>
+          <td class="fluid-pad" style="padding:40px 44px 8px 44px;font-family:'Space Grotesk',Arial,sans-serif;">
+            <p style="margin:0 0 14px 0;color:#021D5B;font-size:20px;line-height:1.4;font-weight:700;">Oi, *|PRIMEIRO_NOME|*!</p>
+            <p style="margin:0 0 16px 0;color:#333333;font-size:16px;line-height:1.7;">Nesta semana, <strong style="color:#021D5B;">clientes da Ville receberam e-mails falsos, com boletos falsos</strong>, em nome da empresa. Os golpistas se passam pela Ville, costumam justificar o envio como um <strong style="color:#021D5B;">ajuste de alíquota</strong> e pedem o pagamento de um boleto "corrigido".</p>
+            <p style="margin:0 0 8px 0;color:#333333;font-size:16px;line-height:1.7;">Para a sua segurança, quatro cuidados antes de qualquer pagamento:</p>
+          </td>
+        </tr>
+
+        <!-- PASSOS -->
+        <tr>
+          <td class="fluid-pad" style="padding:20px 44px 0 44px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8f8f8;border-left:4px solid #FF8F00;border-radius:8px;">
+              <tr><td style="padding:24px 22px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top" width="44" style="padding:0 0 20px 0;"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="14" fill="#FF8F00"/><text x="15" y="20.5" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#ffffff">1</text></svg></td>
+                <td valign="top" style="padding:0 0 20px 0;font-family:'Space Grotesk',Arial,sans-serif;"><p style="margin:0 0 3px 0;color:#021D5B;font-size:16px;font-weight:700;">Confira o domínio do remetente</p><p style="margin:0;color:#333333;font-size:14px;line-height:1.6;">E-mails oficiais da Ville terminam em <strong style="color:#021D5B;">@villeprotecao.com.br</strong>. Endereços de Gmail, Outlook, Hotmail ou de qualquer outro domínio não são da Ville.</p></td>
+              </tr>
+              <tr>
+                <td valign="top" width="44" style="padding:0 0 20px 0;"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="14" fill="#FF8F00"/><text x="15" y="20.5" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#ffffff">2</text></svg></td>
+                <td valign="top" style="padding:0 0 20px 0;font-family:'Space Grotesk',Arial,sans-serif;"><p style="margin:0 0 3px 0;color:#021D5B;font-size:16px;font-weight:700;">Confira os dados do boleto</p><p style="margin:0;color:#333333;font-size:14px;line-height:1.6;">Boletos emitidos <strong style="color:#021D5B;">apenas através do Itaú</strong>. Confira se o beneficiário é a Ville Equipamentos Ltda, com o CNPJ <strong style="color:#021D5B;">22.226.249/0001-52</strong>, e se o valor corresponde à sua nota fiscal e ao seu pedido.</p></td>
+              </tr>
+              <tr>
+                <td valign="top" width="44" style="padding:0 0 20px 0;"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="14" fill="#FF8F00"/><text x="15" y="20.5" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#ffffff">3</text></svg></td>
+                <td valign="top" style="padding:0 0 20px 0;font-family:'Space Grotesk',Arial,sans-serif;"><p style="margin:0 0 3px 0;color:#021D5B;font-size:16px;font-weight:700;">Desconfie de "ajuste de alíquota"</p><p style="margin:0;color:#333333;font-size:14px;line-height:1.6;">Os e-mails falsos costumam alegar ajuste de alíquota, recálculo ou redução de valor, com um boleto corrigido em anexo e prazo curto para pagar.</p></td>
+              </tr>
+              <tr>
+                <td valign="top" width="44" style="padding:0;"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="14" fill="#FF8F00"/><text x="15" y="20.5" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#ffffff">4</text></svg></td>
+                <td valign="top" style="padding:0;font-family:'Space Grotesk',Arial,sans-serif;"><p style="margin:0 0 3px 0;color:#021D5B;font-size:16px;font-weight:700;">Na dúvida, não pague</p><p style="margin:0;color:#333333;font-size:14px;line-height:1.6;">Confirme com o seu vendedor Ville por um contato que você já conhece, sem responder ao e-mail suspeito.</p></td>
+              </tr>
+                </table>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SE RECEBEU -->
+        <tr>
+          <td class="fluid-pad" style="padding:22px 44px 0 44px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="background-color:#fff4e5;border-radius:8px;padding:18px 20px;font-family:'Space Grotesk',Arial,sans-serif;">
+              <p style="margin:0 0 6px 0;color:#021D5B;font-size:15px;font-weight:700;">Recebeu algo suspeito?</p>
+              <p style="margin:0;color:#333333;font-size:14px;line-height:1.6;">Não clique em links, não abra anexos e não faça o pagamento. Avise a Ville. Se você já pagou, fale com a Ville e com o seu banco o quanto antes.</p>
+            </td></tr></table>
+          </td>
+        </tr>
+
+        <!-- CTA -->
+        <tr>
+          <td align="center" style="padding:30px 44px 40px 44px;">
+            <a href="https://www.villeprotecao.com.br?utm_source=rdstation&utm_medium=email&utm_campaign=alerta_seguranca_boleto_falso&utm_content=cta_site" target="_blank" rel="noopener" style="display:inline-block;background-color:#FF8F00;color:#ffffff;text-decoration:none;font-family:'Space Grotesk',Arial,sans-serif;font-size:15px;font-weight:700;padding:15px 34px;border-radius:26px;">Qualquer dúvida, fale com a Ville</a>
+          </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+          <td style="background-color:#021D5B;padding:28px 44px;" align="center">
+            <p style="margin:0 0 6px 0;color:#ffffff;font-family:'Space Grotesk',Arial,sans-serif;font-size:13px;font-weight:700;">Ville · Solução em Proteção Para Altas Temperaturas</p>
+            <p style="margin:0;color:#D1D3D4;font-family:'Space Grotesk',Arial,sans-serif;font-size:12px;line-height:1.6;">Certificada ISO 9001:2015 · Desde 1989 · Bragança Paulista, SP</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
